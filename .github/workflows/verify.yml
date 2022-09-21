@@ -2,8 +2,19 @@ name: verify
 
 on:
   push:
+    paths:
+     - '**.go'
+     #- '**'
+     #- '!.gitignore'
+     #- '!**.png'
+     #- '!**.md' 
+     #- '!**.yml' 
+     #- '!**.yaml' 
+     #- '!third_party/**'
+     #- '!config/**'
+     #- '!testdata/**' 
   pull_request:
-
+      
 permissions: read-all
 
 jobs:
